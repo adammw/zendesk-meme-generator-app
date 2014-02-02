@@ -1,0 +1,5 @@
+<div data-generator-id="{{generatorID}}" class="generator-result clearfix">
+  <p class="pull-right"><img src="{{imageUrl}}" /></p>
+  <p class="generator-name">{{displayName}}</p>
+  <p class="generator-stats">{{instancesCount}} instances, {{ranking}} votes</p>
+</div>

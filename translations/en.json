@@ -2,18 +2,34 @@
   "app": {
     "package": "app_name",
     "description": {
-      "value": "Play the famous zen tunes in your help desk.",
+      "value": "Create and search for Memes to add to a ticket",
       "title": "app description"
     },
     "name": {
-      "value": "Buddha Machine",
+      "value": "Meme Generator",
       "title": "app name"
+    },
+    "parameters": {
+      "username" : { "label": "Username" },
+      "password" : { "label": "Password" }
     }
   },
 
   "loading": {
     "value": "Welcome to this Sample App",
     "title": "loading placeholder"
+  },
+
+  "favourites": {
+    "none": {
+      "value": "You do not currently have any favourites saved.",
+      "title": "no favourites available"
+    }
+  },
+
+  "no_results": {
+    "value": "No results found.",
+    "title": "no results found"
   },
 
   "fetch": {

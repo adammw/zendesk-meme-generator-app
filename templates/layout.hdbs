@@ -1,10 +1,70 @@
+<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 <header>
   <span class="logo"/>
   <h3>{{setting "name"}}</h3>
 </header>
+<ul class="nav nav-tabs">
+  <li><a href="#favourites" data-toggle="tab" title="Favourites"><i class="fa fa-star yellow"></i></a></li>
+  <li class="active"><a href="#popular" data-toggle="tab" title="Popular">Popular</a></li>
+  <li><a href="#recent" data-toggle="tab" title="Recent">Recent</a></li>
+  <li><a href="#search" data-toggle="tab" title="Search">Search</a></li>
+  <li><a href="#create" data-toggle="tab" title="Create">Create</a></li>
+</ul>
+<!-- Tab panes -->
+<div class="tab-content">
+  <div class="tab-pane" id="favourites">{{spinner}}</div>
+  <div class="tab-pane active" id="popular">{{spinner}}</div>
+  <div class="tab-pane" id="recent">{{spinner}}</div>
+  <div class="tab-pane" id="search">
+    <form class="search">
+      <div class="search-bar">
+        <div class="search-wrapper">
+          <input type="search" class="form-control" placeholder="Search query">
+          <span class="search-icon globals-sprite"></span>
+        </div>
+      </div>
+    </form>
+    <div class="results"></div>
+  </div>
+  <div class="tab-pane" id="create">
+    <form class="create">
+      <div class="form_field">
+        <label for="generator">Generator:</label>
+        <input type="text" id="generator" />
+      </div>
+      <div id="after-selection" class="hidden">
+        <div class="image">
+          <img id="selected_generator" />
+        </div>
+        <div class="form_field">
+          <label for="text0">Line 1:</label>
+          <input type="text" id="text0" />
+        </div>
+        <div class="form_field">
+          <label for="text1">Line 2:</label>
+          <input type="text" id="text2" />
+        </div>
+        <div class="buttons"><button class="btn btn-primary" id="create-btn">Create</button></div>
+      </div>
+    </form>
+  </div>
+  <div class="tab-pane" id="failure">An error occured while trying to contact the Meme Generator API.<br />Please try again later.</div>
+  <div class="tab-pane" id="selection"></div>
+</div>
 <section data-main/>
 <footer>
-  <a href="mailto:{{author.email}}">
-    {{author.name}}
-  </a>
+  Meme Generator App for Zendesk by <a href="https://github.com/adammw" target="_blank">@adammw</a>
 </footer>
+<link rel="stylesheet" href="{{assetURL "select2.css"}}" />
+<style>
+/* inline styles here rather than app.css as select2 breaks out of scope so we need our styles to as well */
+.generator-result .generator-name {
+  font-weight: bold;
+}
+
+.generator-result .generator-stats {
+  font-variant: italic;
+  font-weight: normal;
+}
+</style>
+<script src="{{assetURL "select2.min.js"}}"></script>

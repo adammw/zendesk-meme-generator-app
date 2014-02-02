@@ -1,0 +1,10 @@
+<div class="thumb-container">
+  {{#items}}
+  <div class="thumb">
+    <a href="{{instanceUrl}}" title="{{displayName}}: {{text0}} - {{text1}}" target="_blank" data-instance-id="{{instanceID}}"><img src="{{instanceImageUrl}}"/></a>
+  </div>
+  {{/items}}
+  {{#unless favouritePage}}
+  <a href="#" class="load-more"><i class="fa fa-caret-down"></i> Load more... <i class="fa fa-caret-down"></i></a>
+  {{/unless}}
+</div>

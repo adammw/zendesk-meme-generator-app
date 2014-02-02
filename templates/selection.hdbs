@@ -1,0 +1,11 @@
+<header class="clearfix">
+  <a href="#" id="back" class="btn btn-default btn-small pull-left" title="Go Back to Results">&laquo;</a>
+  <a href="#" id="favourite" class="btn btn-default pull-right" title="Add to Favourites"><i class="fa {{#if isFavourite}}fa-star{{else}}fa-star-o{{/if}} yellow"></i></a>
+  <h4>{{displayName}}</h4>
+</header>
+
+<p class="image"><a href="{{instanceUrl}}" title="{{displayName}}: {{text0}} - {{text1}}" target="_blank" data-instance-id="{{instanceID}}"><img src="{{instanceImageUrl}}"/></a></p>
+
+<p class="caption">{{text0}}<br />{{text1}}</p>
+
+<div class="buttons"><button class="btn btn-primary" id="attach">Attach to Ticket</button></div>

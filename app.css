@@ -1,0 +1,140 @@
+.fa-star.yellow, .fa-star-o.yellow {
+  color: #F5E26A;
+}
+
+.hidden {
+  display: none !important;
+}
+
+/*
+ * Buttons
+ */
+
+.buttons {
+  margin-top: 10px;
+}
+
+a.btn.btn-default {
+  color: #146eaa;
+}
+
+.btn.btn-default {
+  border: 1px solid #d3d3d3;
+  background: #fff;
+}
+
+.btn.btn-default:hover {
+  background-color: #eee;
+}
+
+/* 
+ * Search
+ */
+
+.search-bar {
+  padding: 8px 0;
+  margin-bottom: 6px;
+  background-color: #f8f8f8;
+  white-space: nowrap;
+}
+
+.search .search-bar .search-wrapper {
+  position: relative;
+}
+
+.search .search-bar .search-icon {
+  position: absolute;
+  background-position: 0 -220px;
+  top: 9px;
+  left: 31px;
+  width: 20px;
+  height: 20px;
+  opacity: 0.3;
+}
+
+.search .search-bar input {
+  font-size: 18px;
+  width: 200px;
+  background-color: #fff;
+  padding: 8px 40px;
+}
+
+/*
+ * Tabs
+ */
+
+.nav {
+  margin-bottom: 10px;
+}
+
+.tab-pane {
+  text-align: center;
+}
+
+#selection.tab-pane, #create.tab-pane { 
+  text-align: left;
+}
+
+/*
+ * Create screen
+ */
+
+#create .form_field,
+#create .select2-container {
+  width: 320px;
+  float: none;
+}
+
+#create .form_field>input {
+  width: 310px;
+}
+
+#create .select2-container {
+  margin-bottom: 10px;
+}
+
+.tab-content header {
+  border: none;
+}
+
+#selection h4 {
+  line-height: 28px;
+}
+
+#selection #back {
+  margin-right: 5px;
+}
+
+/*
+ * List
+ */
+
+.thumb {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  padding: 2px;
+  overflow: hidden;
+}
+
+.load-more {
+  display: block;
+  width: 100%;
+  padding: 8px 0;
+  font-size: 110%;
+  color: #8f8f8f;
+  background-color: #f8f8f8;
+  white-space: nowrap;
+}
+
+.load-more i.fa {
+  margin: 0 50px;
+}
+
+footer {
+  padding-top: 10px;
+  margin-top: 10px;
+  color: #777;
+  text-align: center;
+  border-top: 1px solid #e5e5e5;
+}

@@ -4,9 +4,21 @@
     "name": "Adam Malcontenti-Wilson",
     "email": "adman.com@gmail.com"
   },
+  "parameters": [
+    {
+      "name": "username",
+      "type": "text",
+      "required": true
+    },
+    {
+      "name": "password",
+      "type": "password",
+      "required": true
+    }
+  ],
   "defaultLocale": "en",
   "private": true,
-  "location": "ticket_sidebar",
-  "version": "1.0",
+  "location": ["ticket_sidebar","new_ticket_sidebar"],
+  "version": "0.1",
   "frameworkVersion": "0.5"
 }
