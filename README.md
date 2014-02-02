@@ -1,15 +1,7 @@
-# App name
+# Meme Generator App for Zendesk
 
-[brief description of the app]
+Search for a Meme and add it to a Zendesk ticket
 
-### The following information is displayed:
+Please submit bug reports to [GitHub](https://github.com/adammw/zendesk-meme-generator-app/issues/new). Pull requests are welcome.
 
-* info1
-* info2
-* info3
-
-Please submit bug reports to [Insert Link](). Pull requests are welcome.
-
-### Screenshot(s):
-[put your screenshots down here.]
 
